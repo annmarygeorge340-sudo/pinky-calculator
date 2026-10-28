@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+   
+</head>
+<body>
+
+    <h1>Calculator</h1>
+
+    <div class="calculator">
+
+        <!-- Display -->
+        <input type="text" id="result" class="display" placeholder  ="0" readonly>
+
+        <!-- Buttons -->
+        <div class="buttons">
+
+            <button onclick="displaycalculatornum('7')">7</button>
+            <button onclick="displaycalculatornum('8')">8</button>
+            <button onclick="displaycalculatornum('9')">9</button>
+            <button class="multi" onclick="displaycalculatornum('*')">&#215</button>
+
+            <button onclick="displaycalculatornum('4')">4</button>
+            <button onclick="displaycalculatornum('5')">5</button>
+            <button onclick="displaycalculatornum('6')">6</button>
+            <button class="sub" onclick="displaycalculatornum('-')">&#8722</button>
+
+            <button onclick="displaycalculatornum('1')">1</button>
+            <button onclick="displaycalculatornum('2')">2</button>
+            <button onclick="displaycalculatornum('3')">3</button>
+            <button class="add" onclick="displaycalculatornum('+')">&#43</button>
+
+            <button onclick="clearallvaleinscreen()" class="clear">AC</button>
+            <button onclick="displaycalculatornum('0')">0</button>
+            <button onclick="displaycalculatornum('/')" class="div">&#247</button>
+            <button onclick="finalresult()" class="equals">&#61</button>
+            <button onclick="clearlastdigit()" class="backspace">&#9003</button>
+           
+
+        </div>
+
+    </div>
+
+</body>
+<script src="./main.js"> </script>
+</html>
